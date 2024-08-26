@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+    <h1 class="heading">Tic Tac Toe Game</h1>
+    <div class="side_bar">
+        <p style="font-size: 1.5rem;">P1 = X</p>   
+        <p style="font-size: 1.5rem;">P2 = O</p>
+        <p class="turn"></p>
+    </div>
+    <div class="side-info">
+    <p class="turn" id="normal"> </p>
+    
+    <div class="instructions">
+        <p>Player 1: X</p>
+        <p>Player 2: O</p>
+        <button class="click_btn"><i class="ri-menu-line"></i></button>
+    </div>
+    </div>
+    <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    <div class="lower-section">
+        <button id="reset_btn">Reset Game</button>
+        <p class="winner"> </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

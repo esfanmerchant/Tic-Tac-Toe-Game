@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    border: 4px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+.box{
+    height: 18.5vmin;
+    width: 18.5vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    font-size: 4rem;
+    font-weight: bolder;
+    color: red;
+    background-color: gray;
+}
+.box:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.heading{
+    font-size: 3.5em;
+    font-weight: 700;
+    color: white;
+    margin: 0.2em;
+}
+#reset_btn{
+    height: 4rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    border-radius: 0.7rem;
+    border: 2px solid white;
+    background-color: #191913;
+    color: #fff;
+}
+#reset_btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.lower-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.turn{
+    /* font-size: 2rem; */
+    position: absolute;
+    left: 1.2rem;
+    top: 7rem;
+    color: #fff;
+}
+.winner{
+    font-size: 2rem;
+    margin-left: 1.5rem ;
+    color: #fff;
+    font-weight: bold;
+}
+.instructions{
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    display: inline-block;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+}
+.click_btn{
+    visibility: hidden;
+    display: flex;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.2rem ;
+}
+.click_btn:hover{
+    opacity: 0.8;
+}
+.side_bar{
+    background-color: gray;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(7px);
+    height: 5em;
+    width: 10rem;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    text-align: center;
+
+}
+@media(min-width:650px){
+    .turn{
+        visibility: visible;
+        font-size: 2rem;
+    }
+}
+@media(max-width: 900px){
+.instructions{
+    font-size: 1.5rem;
+    padding: 0.4rem;
+}
+.turn{
+    font-size: 1.5rem;
+    top: 5rem;
+    left: 0.8rem;
+}
+}
+@media(max-width: 740px){
+    .instructions{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .turn{
+        font-size: 1rem;
+        top: 3.7rem;
+    }
+}
+@media(max-width: 650px){
+    .instructions{
+        font-size: 0.9rem;
+        padding: 0.1rem;
+        width: 4rem;
+        border: none;
+    }
+    .instructions p{
+        display: none;
+    }
+    #normal{
+        visibility: hidden;
+    }
+    .click_btn{
+        visibility: visible;
+    }
+}
